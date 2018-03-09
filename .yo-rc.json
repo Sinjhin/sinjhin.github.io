@@ -1,0 +1,9 @@
+{
+  "generator-donejs": {
+    "promptValues": {
+      "authorUrl": "ardea.io",
+      "authorName": "John Gardner",
+      "authorEmail": "john@ardea.io"
+    }
+  }
+}

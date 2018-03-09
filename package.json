@@ -1,0 +1,91 @@
+{
+  "name": "john-gardner-resume-site",
+  "version": "0.0.0",
+  "description": "Personal resume website for John Gardner web development.",
+  "homepage": "github.com/sinjhin/sinjhin.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinjhin/john-gardner-resume-site.git"
+  },
+  "author": {
+    "name": "John Gardner",
+    "email": "john@ardea.io",
+    "url": "ardea.io"
+  },
+  "private": true,
+  "scripts": {
+    "test": "testee test.html --browsers firefox --reporter Spec",
+    "start": "done-serve --port 8080",
+    "develop": "done-serve --develop --port 8080",
+    "build": "node build"
+  },
+  "main": "john-gardner-resume-site/index.stache!done-autorender",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "CanJS",
+    "Development",
+    "DoneJS",
+    "donejs-app",
+    "Gardner",
+    "John",
+    "Resume",
+    "StealJS",
+    "Web"
+  ],
+  "steal": {
+    "main": "john-gardner-resume-site/index.stache!done-autorender",
+    "directories": {
+      "lib": "src"
+    },
+    "configDependencies": [
+      "live-reload",
+      "node_modules/can-zone/register",
+      "node_modules/steal-conditional/conditional"
+    ],
+    "plugins": [
+      "done-css",
+      "done-component",
+      "steal-less",
+      "steal-stache"
+    ],
+    "envs": {
+      "server-production": {
+        "renderingBaseURL": "/dist"
+      }
+    },
+    "serviceBaseURL": ""
+  },
+  "dependencies": {
+    "can-component": "^4.0.2",
+    "can-connect": "^2.0.2",
+    "can-define": "^2.0.1",
+    "can-route": "^4.1.0",
+    "can-route-pushstate": "^4.0.1",
+    "can-set": "^1.5.1",
+    "can-stache": "^4.1.0",
+    "can-stache-route-helpers": "<2.0.0",
+    "can-view-autorender": "^4.0.0",
+    "can-zone": "^0.6.13",
+    "done-autorender": "^2.0.0",
+    "done-component": "^2.0.0",
+    "done-css": "^3.0.2",
+    "done-serve": "^2.0.0",
+    "generator-donejs": "^2.1.0",
+    "steal": "^1.6.5",
+    "steal-less": "^1.2.2",
+    "steal-stache": "^4.0.1"
+  },
+  "devDependencies": {
+    "can-debug": "^1.0.0",
+    "can-fixture": "^2.0.2",
+    "donejs-cli": "^2.0.0",
+    "funcunit": "^3.2.0",
+    "steal-conditional": "^1.0.0",
+    "steal-qunit": "^1.0.1",
+    "steal-tools": "^1.11.3",
+    "testee": "^0.7.0"
+  },
+  "license": "MIT"
+}
