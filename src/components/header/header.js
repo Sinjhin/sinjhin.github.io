@@ -4,6 +4,7 @@ import './header.less';
 import view from './header.stache';
 
 export const ViewModel = DefineMap.extend({
+  
 });
 
 export default Component.extend({
