@@ -6,7 +6,7 @@
     <can-import from="~/styles.less" />
     <can-import from="~/app" export-as="viewModel" />
 
-    <h1>{{message}}</h1>
+    
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}

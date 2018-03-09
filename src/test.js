@@ -3,6 +3,8 @@ import QUnit from 'steal-qunit';
 
 import 'john-gardner-resume-site/models/test';
 
+import '~/components/header/header-test';
+
 F.attach(QUnit);
 
 QUnit.module('john-gardner-resume-site functional smoke test', {
@@ -12,5 +14,5 @@ QUnit.module('john-gardner-resume-site functional smoke test', {
 });
 
 QUnit.test('john-gardner-resume-site main page shows up', function() {
-  F('title').text('john-gardner-resume-site', 'Title is set');
+  F('title').text('John Gardner Resume Site', 'Title is set');
 });

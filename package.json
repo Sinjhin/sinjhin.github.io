@@ -14,7 +14,8 @@
   },
   "private": true,
   "scripts": {
-    "test": "testee test.html --browsers firefox --reporter Spec",
+    "eslint": "eslint ./src/**.js",
+    "test": "npm run eslint && testee test.html --browsers firefox --reporter Spec",
     "start": "done-serve --port 8080",
     "develop": "done-serve --develop --port 8080",
     "build": "node build"
@@ -81,6 +82,7 @@
     "can-debug": "^1.0.0",
     "can-fixture": "^2.0.2",
     "donejs-cli": "^2.0.0",
+    "eslint": "^4.18.2",
     "funcunit": "^3.2.0",
     "steal-conditional": "^1.0.0",
     "steal-qunit": "^1.0.1",

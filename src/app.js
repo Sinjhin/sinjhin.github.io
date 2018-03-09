@@ -8,12 +8,8 @@ const AppViewModel = DefineMap.extend({
     default: () => ({NODE_ENV:'development'}),
     serialize: false
   },
-  message: {
-    default: 'Hello World!',
-    serialize: false
-  },
   title: {
-    default: 'john-gardner-resume-site',
+    default: 'John Gardner Resume Site',
     serialize: false
   }
 });
