@@ -18,7 +18,7 @@
   "private": true,
   "scripts": {
     "eslint": "eslint ./src/**.js",
-    "test": "testee test.html --browsers firefox",
+    "test": "npm run eslint && testee test.html --browsers firefox",
     "start": "done-serve --port 8080",
     "develop": "done-serve --develop --port 8080",
     "build": "node build"
