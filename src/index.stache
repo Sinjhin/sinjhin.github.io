@@ -5,8 +5,9 @@
   <body>
     <can-import from="~/styles.less" />
     <can-import from="~/app" export-as="viewModel" />
+    <can-import from="~/components/header/" />
 
-    
+    <header />
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}
