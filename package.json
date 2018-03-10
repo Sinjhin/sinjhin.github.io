@@ -5,7 +5,7 @@
   "homepage": "https://github.com/sinjhin/sinjhin.github.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sinjhin/sinjhin.github.io.git"
+    "url": "sinjhin/sinjhin.github.io"
   },
   "author": {
     "name": "John Gardner",
@@ -80,6 +80,7 @@
     "done-component": "^2.0.0",
     "done-css": "^3.0.2",
     "done-serve": "^2.0.0",
+    "donejs-travis": "^1.0.0",
     "generator-donejs": "^2.1.0",
     "steal": "^1.6.5",
     "steal-less": "^1.2.2",
