@@ -1,6 +1,6 @@
 <p>{{message}}</p>
 
-<a href="www.google.com" target="_blank">Google</a>
+<a href="http://www.google.com" target="_blank">Google</a>
 
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

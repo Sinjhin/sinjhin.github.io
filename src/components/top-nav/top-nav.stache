@@ -1,12 +1,12 @@
 
-<div class="nav-background"></div>
+<div class="nav-background column-all" />
 
-<a href="{{routeUrl(page='home')}}" class="column-left">JOHN GARDNER</a>
+<a href="{{routeUrl(page='home')}}" class="column-left">JOHN&nbsp;GARDNER</a>
 
 <div class="column-right">
   <a {{^routeCurrent(page='portfolio')}}href="{{routeUrl(page='portfolio')}}"{{/routeCurrent}}>Portfolio</a>
   <a href="#">Resume</a>
-  <a href="#">About Me</a>
+  <a href="#">About&nbsp;Me</a>
   <a href="#">Contact</a>
 </div>
 

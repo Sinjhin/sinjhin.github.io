@@ -18,21 +18,32 @@ sin-top-nav {
 		color: @brand-secondary;
 	}
 
-	.column-left {
+	.column-all {
 		grid-column-start: 1;
-		grid-column-end: 1;
+		grid-column-end: 4;
 		grid-row-start: 1;
 		grid-row-end: 1;
-		padding: 2.5rem 0 1.5rem 6rem;
+	}
+
+	.nav-background {
+		background: @transparent-black;
+	}
+
+	.column-left {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		padding: 2.5rem 0 2.5rem 6rem;
 	}
 
 	.column-right {
 		grid-column-start: 3;
-		grid-column-end: 3;
+		grid-column-end: 4;
 		grid-row-start: 1;
 		grid-row-end: 1;
 		text-align: right;
-		padding: 2.5rem 6rem 1.5rem 0;
+		padding: 2.5rem 6rem 2.5rem 0;
 		a {
 			margin: 0 1rem 0 1rem;
 		}

@@ -6,6 +6,15 @@ import view from './portfolio.stache';
 export const ViewModel = DefineMap.extend({
   message: {
     default: 'This is the sin-portfolio component'
+  },
+  connectedCallback(el) {
+    const portfolioTimer = setTimeout(() => {
+      el.classList.add('shown');
+    });
+
+    return function() {
+      clearInterval(portfolioTimer);
+    };
   }
 });
 
