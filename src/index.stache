@@ -3,11 +3,31 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <can-import from="~/styles.less" />
+    <can-import from="~/styles/styles.less" />
     <can-import from="~/app" export-as="viewModel" />
-    <can-import from="~/components/header/" />
+    <can-import from="~/components/top-nav/" />
+    <can-import from="~/components/background/" />
+    <can-import from="~/components/main/" />
+    <can-import from="~/components/portfolio/" />
+    <can-import from="~/components/footer/" />
 
-    <header />
+    <header>
+      <sin-top-nav />
+    </header>
+    <main>
+      <sin-background />
+      {{#switch(page)}}
+        {{#case('portfolio')}}
+          <sin-portfolio />
+        {{/case}}
+        {{#default}}
+          <sin-main />
+        {{/default}}
+      {{/switch}}
+    </main>
+    <footer>
+      
+    </footer>
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}

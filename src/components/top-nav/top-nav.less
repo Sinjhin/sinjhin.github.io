@@ -1,0 +1,40 @@
+@import '../../styles/variables.less';
+
+sin-top-nav {
+	display: grid;
+	grid-template-columns: 25% auto 50%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: @transparent;
+	z-index: @z-index-nav;
+
+	a, a:visited {
+		color: @off-white;
+	}
+
+	a:hover {
+		color: @brand-secondary;
+	}
+
+	.column-left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		padding: 2.5rem 0 1.5rem 6rem;
+	}
+
+	.column-right {
+		grid-column-start: 3;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		text-align: right;
+		padding: 2.5rem 6rem 1.5rem 0;
+		a {
+			margin: 0 1rem 0 1rem;
+		}
+	}
+}

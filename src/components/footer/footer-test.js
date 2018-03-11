@@ -1,8 +1,8 @@
 import QUnit from 'steal-qunit';
-import { ViewModel } from './header';
+import { ViewModel } from './footer';
 
 // ViewModel unit tests
-QUnit.module('~/components/header');
+QUnit.module('~/components/footer');
 
 QUnit.test('Can Exist', function(){
   var vm = new ViewModel();

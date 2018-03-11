@@ -1,6 +1,7 @@
 import DefineMap from 'can-define/map/';
-// import route from 'can-route';
+import route from 'can-route';
 import 'can-route-pushstate';
+import 'can-stache-route-helpers';
 import 'can-debug#?./is-dev';
 
 const AppViewModel = DefineMap.extend({
@@ -11,7 +12,13 @@ const AppViewModel = DefineMap.extend({
   title: {
     default: 'John Gardner Resume Site',
     serialize: false
+  },
+  page: {
+    type: 'string',
+    serialize: true
   }
 });
+
+route.register( '{page}', { page: 'home' } );
 
 export default AppViewModel;

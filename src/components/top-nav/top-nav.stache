@@ -1,0 +1,12 @@
+
+<div class="nav-background"></div>
+
+<a href="{{routeUrl(page='home')}}" class="column-left">JOHN GARDNER</a>
+
+<div class="column-right">
+  <a {{^routeCurrent(page='portfolio')}}href="{{routeUrl(page='portfolio')}}"{{/routeCurrent}}>Portfolio</a>
+  <a href="#">Resume</a>
+  <a href="#">About Me</a>
+  <a href="#">Contact</a>
+</div>
+
