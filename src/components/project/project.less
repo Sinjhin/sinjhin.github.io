@@ -1,3 +1,94 @@
+@import '../../styles/variables.less';
+
 sin-project {
 	display: block;
+	position: relative;
+	height: 100%;
+	color: @white;
+
+	img.pic-container {
+		display: block;
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: 0 0;
+		transition: all @norm ease-in-out;
+		&.shown {
+			opacity: 1;
+		}
+	}
+	
+	div.center-text {
+		width: 100%;
+		text-align: center;
+		transition: all @norm ease-in-out;
+		&.details {
+			position: fixed;
+			z-index: @z-index-top;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background: @brand-success;
+		}
+	}
+
+	h2 {
+		margin: 0;
+	}
+
+	.project-details {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		grid-template-rows: 100%;
+		height: 100%;
+	}
+
+	.details-col-1 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 0;
+		grid-row-start: 1;
+		height: 100%;
+	}
+
+	.details-col-2 {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 0;
+		grid-row-start: 1;
+		height: 100%;
+		overflow: auto;
+		background: @grey-dark;
+		padding: 1rem 6rem;
+	}
+
+	button.close-button {
+		position: fixed;
+		top: 1rem;
+		right: 3rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+		width: 4rem;
+		height: 4rem;
+		overflow: hidden;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			background: @white;
+			height: 1.2rem;
+			margin-top: -0.6rem;
+			width: 200%;
+      left: -50%;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
 }

@@ -7,9 +7,10 @@ export const ViewModel = DefineMap.extend({
   message: {
     default: 'This is the sin-top-nav component'
   },
-  connectedCallback(el) {
+  toggleNav: 'any',
+  connectedCallback() {
     const animationTimer = setTimeout(() => {
-      el.classList.add('shown');
+      this.toggleNav();
     }, 500);
 
     return function() {

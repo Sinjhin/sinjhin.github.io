@@ -1,1 +1,23 @@
-<p>{{message}}</p>
+
+<img src="{{pic}}" class="pic-container {{#if picShown}}shown{{/if}}" />
+
+<div class="vertical-center center-text {{#if detailsShown}}details{{/if}}">
+  {{^if detailsShown}}
+    <a href="#" on:mouseover="showProjectPic()" on:mouseleave="hideProjectPic()" on:click="showProject(scope.event)">
+      <h2>
+        {{title}}
+      </h2>
+      <span>{{duty}}</span>
+    </a>
+  {{else}}
+    <div class="project-details">
+      <button class="close-button" on:click="closeProject()">X</button>
+      <div class="details-col-1">
+        <img src="{{pic}}" class="pic-container shown" />
+      </div>
+      <div class="details-col-2">
+        <content />
+      </div>
+    </div>
+  {{/if}}
+</div>
