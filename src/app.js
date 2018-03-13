@@ -5,6 +5,9 @@ import 'can-stache-route-helpers';
 import 'can-debug#?./is-dev';
 
 const AppViewModel = DefineMap.extend({
+  init(){
+    window.appVM = this;
+  },
   env: {
     default: () => ({NODE_ENV:'development'}),
     serialize: false
@@ -16,6 +19,14 @@ const AppViewModel = DefineMap.extend({
   page: {
     type: 'string',
     serialize: true
+  },
+  navShown: {
+    type: 'boolean',
+    default: false,
+    serialize: false
+  },
+  toggleNav() {
+    this.navShown = !this.navShown;
   }
 });
 

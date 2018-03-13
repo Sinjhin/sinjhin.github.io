@@ -4,7 +4,7 @@ import { ViewModel } from './project';
 // ViewModel unit tests
 QUnit.module('~/components/project');
 
-QUnit.test('Has message', function(){
+QUnit.test('Can Exist', function(){
   var vm = new ViewModel();
-  QUnit.equal(vm.message, 'This is the sin-project component');
+  QUnit.equal(vm instanceof ViewModel, true, 'It is instance of ViewModel');
 });

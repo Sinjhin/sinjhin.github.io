@@ -4,7 +4,7 @@
 
   <div class="column-right">
     <a {{^routeCurrent(page='portfolio')}}href="{{routeUrl(page='portfolio')}}"{{else}}class="current-page"{{/routeCurrent}}>Projects</a>
-    <a href="#">Resume</a>
+    <a {{^routeCurrent(page='resume')}}href="{{routeUrl(page='resume')}}"{{else}}class="current-page"{{/routeCurrent}}>Resume</a>
     <a href="#">About&nbsp;Me</a>
     <a href="#">Contact</a>
   </div>

@@ -12,13 +12,13 @@
     <can-import from="~/components/footer/" />
 
     <header>
-      <sin-top-nav />
+      <sin-top-nav toggleNav:from="toggleNav" {{#if navShown}}class="shown"{{/if}} />
     </header>
     <main>
       {{#switch(page)}}
         {{#case('portfolio')}}
           <sin-background />
-          <sin-portfolio />
+          <sin-portfolio toggleNav:from="@toggleNav" />
         {{/case}}
         {{#default}}
           <sin-background />
