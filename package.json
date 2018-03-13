@@ -1,21 +1,24 @@
 {
   "name": "john-gardner-resume-site",
   "version": "0.0.0",
-  "description": "Personal resume website for John Gardner web development.",
-  "homepage": "github.com/sinjhin/sinjhin.github.io",
+  "description": "A resume and portfolio site for John Gardner, web developer",
+  "homepage": "https://github.com/sinjhin/sinjhin.github.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sinjhin/john-gardner-resume-site.git"
+    "url": "sinjhin/sinjhin.github.io"
   },
   "author": {
     "name": "John Gardner",
     "email": "john@ardea.io",
-    "url": "ardea.io"
+    "url": "http://ardea.io"
+  },
+  "bugs": {
+    "url": "https://github.com/sinjhin/sinjhin.github.io/issues"
   },
   "private": true,
   "scripts": {
     "eslint": "eslint ./src/**.js",
-    "test": "npm run eslint && testee test.html --browsers firefox --reporter Spec",
+    "test": "npm run eslint && testee test.html --browsers firefox",
     "start": "done-serve --port 8080",
     "develop": "done-serve --develop --port 8080",
     "build": "node build"
@@ -33,7 +36,11 @@
     "John",
     "Resume",
     "StealJS",
-    "Web"
+    "Web",
+    "Javascript",
+    "Consulting",
+    "Sinjhin",
+    "Ardea"
   ],
   "steal": {
     "main": "john-gardner-resume-site/index.stache!done-autorender",
@@ -73,6 +80,7 @@
     "done-component": "^2.0.0",
     "done-css": "^3.0.2",
     "done-serve": "^2.0.0",
+    "donejs-travis": "^1.0.0",
     "generator-donejs": "^2.1.0",
     "steal": "^1.6.5",
     "steal-less": "^1.2.2",

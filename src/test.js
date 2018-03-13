@@ -3,7 +3,17 @@ import QUnit from 'steal-qunit';
 
 import 'john-gardner-resume-site/models/test';
 
-import '~/components/header/header-test';
+import '~/components/background/background-test';
+
+import '~/components/main/main-test';
+
+import '~/components/footer/footer-test';
+
+import '~/components/top-nav/top-nav-test';
+
+import '~/components/portfolio/portfolio-test';
+
+import '~/components/project/project-test';
 
 F.attach(QUnit);
 

@@ -1,0 +1,28 @@
+@import '../../styles/variables.less';
+
+sin-background {
+	display: block;
+	position: fixed;
+	background: @parchment;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translate3d(-100%, 0, 0);
+	transition: all @slow ease-out;
+	&.shown {
+		transform: translate3d(0, 0, 0);
+	}
+
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: 0 0;
+		background: @grey-dark;
+	}
+
+	.vignette {
+		// background: rgba(0, 0, 0, 0.9);
+	}
+}

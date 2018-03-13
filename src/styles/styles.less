@@ -1,0 +1,57 @@
+@import 'variables.less';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: @body-bg;
+
+  header {
+    min-height: 6.8rem;
+  }
+
+  .content-container {
+    padding: 0.6rem;
+  }
+}
+
+a {
+  color: @link-color;
+  text-decoration: @link-hover-decoration;
+}
+
+a:hover, a:focus {
+  color: @link-hover-color;
+  text-decoration: @link-hover-decoration;
+}
+
+a:visited {
+  color: @link-visited-color;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30rem 3rem rgba(0, 0, 0, 1) inset;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 813px) {
+  body main {
+    padding: 13.6rem 0;
+  }
+}

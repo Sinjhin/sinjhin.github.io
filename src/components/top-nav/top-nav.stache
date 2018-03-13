@@ -1,0 +1,11 @@
+
+<nav>
+  <a href="{{routeUrl(page='home')}}" class="column-left">JOHN&nbsp;GARDNER</a>
+
+  <div class="column-right">
+    <a {{^routeCurrent(page='portfolio')}}href="{{routeUrl(page='portfolio')}}"{{else}}class="current-page"{{/routeCurrent}}>Projects</a>
+    <a href="#">Resume</a>
+    <a href="#">About&nbsp;Me</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>

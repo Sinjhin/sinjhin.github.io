@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/sinjhin/sinjhin.github.io.png?branch=master)](https://travis-ci.org/sinjhin/sinjhin.github.io)
 # john-gardner-resume-site
 
 Welcome to the john-gardner-resume-site DoneJS application!

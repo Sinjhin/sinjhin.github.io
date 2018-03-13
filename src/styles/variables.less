@@ -1,0 +1,48 @@
+
+// === Colors ===
+@grey-dark: rgba(26, 26, 26, 1);
+@grey-base: lighten(@grey-dark, 33.5%);
+@gray-light: lighten(@grey-dark, 46.7%);
+@transparent-black: rgba(0, 0, 0, 0.8);
+@transparent: rgba(0, 0, 0, 0);
+@black: rgba(0, 0, 0, 1);
+@white: rgba(255, 255, 255, 1);
+@off-white: rgba(225, 225, 225, 1);
+@parchment: rgba(229, 231, 212, 1);
+
+@brand-primary: rgba(75, 134, 35, 1);
+@brand-secondary: rgba(182, 174, 66, 1);
+@brand-tertiary: rgba(122, 66, 174, 1);
+
+@brand-success: rgba(75, 154, 55, 1);
+@brand-info: rgba(55, 75, 154, 1);
+@brand-warning: rgba(236, 174, 66, 1);
+@brand-warning: rgba(241, 66, 63, 1);
+
+
+// === Global Styles ===
+// Background color for `<body>`.
+@body-bg: @grey-dark;
+// Global text color on `<body>`.
+@text-color: @white;
+
+// Global textual link color.
+@link-color: @brand-primary;
+@link-visited-color: @brand-secondary;
+
+// Link hover color set via `darken()` function.
+@link-hover-color: darken(@link-color, 25%);
+// Link hover decoration.
+@link-hover-decoration: none;
+
+
+// === Z-Index Values ===
+@z-index-nav: 10;
+@z-index-nav-background: 6;
+@z-index-header: 7;
+@z-index-norm: 2;
+
+// === Animation Values ===
+@fast: 0.1s;
+@norm: 0.25s;
+@slow: 0.75s;
