@@ -3,44 +3,48 @@
 <span class="col-1">
   <sin-project 
     toggleNav:from="@toggleNav" 
-    title:from="'PROJECT 01'" 
-    duty:from="'DEVELOPMENT'" 
-    pic:from="'/src/img/telekinetic-laptop.jpg'">
+    title:from="'`THIS`'" 
+    duty:from="'DEVELOPMENT / DESIGN'" 
+    pic:from="'/src/img/projects/this.jpg'"
+    showText:from="'true'">
       I did some stuff
   </sin-project>
 </span>
 <span class="col-2">
   <sin-project 
     toggleNav:from="@toggleNav" 
-    title:from="'PROJECT 02'" 
-    duty:from="'DEVELOPMENT'" 
-    pic:from="'/src/img/telekinetic-laptop.jpg'">
+    title:from="'SHOPKEEP'" 
+    duty:from="'DEVELOPMENT / PROTOTYPING'" 
+    pic:from="'/src/img/projects/shopkeep.jpg'"
+    type:from="'fill'">
       I did some stuff
   </sin-project>
 </span>
 <span class="col-3">
   <sin-project 
     toggleNav:from="@toggleNav" 
-    title:from="'PROJECT 03'" 
-    duty:from="'DEVELOPMENT'" 
-    pic:from="'/src/img/telekinetic-laptop.jpg'">
+    title:from="'HAULHOUND'" 
+    duty:from="'DEVELOPMENT / LEAD'" 
+    pic:from="'/src/img/projects/haulhound.jpg'"
+    type:from="'fill'">
       I did some stuff
   </sin-project>
 </span>
 <span class="col-4">
   <sin-project 
     toggleNav:from="@toggleNav" 
-    title:from="'PROJECT 04'" 
-    duty:from="'DEVELOPMENT'" 
-    pic:from="'/src/img/telekinetic-laptop.jpg'">
+    title:from="'ENGAUGE'" 
+    duty:from="'DEVELOPMENT / LEAD'" 
+    pic:from="'/src/img/projects/engauge.jpg'"
+    type:from="'fill'">
       I did some stuff
   </sin-project>
 </span>
 <span class="col-5">
   <sin-project 
     toggleNav:from="@toggleNav" 
-    title:from="'PROJECT 05'" 
-    duty:from="'DEVELOPMENT'" 
+    title:from="'OTHER'" 
+    duty:from="'DEVELOPMENT / DESIGN / LEAD'" 
     pic:from="'/src/img/telekinetic-laptop.jpg'">
       I did some stuff
   </sin-project>

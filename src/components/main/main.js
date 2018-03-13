@@ -7,6 +7,9 @@ export const ViewModel = DefineMap.extend({
   moto: {
     default: 'The art of development'
   },
+  message: {
+    default: "Hi, I'm John and I specialize in creating quality on the web. Full. Stop.",  // eslint-disable-line
+  },
   connectedCallback(el) {
     const animationTimer = setTimeout(() => {
       el.classList.add('shown');
