@@ -1,9 +1,9 @@
 
-<img src="{{pic}}" class="pic-container {{#if picShown}}shown{{/if}}" />
+<img src="{{pic}}" class="pic-container {{#if picShown}}shown{{/if}}" {{#if type}}style="object-fit: {{type}}"{{/if}}/>
 
 <div class="vertical-center center-text {{#if detailsShown}}details{{/if}}">
   {{^if detailsShown}}
-    <a href="#" on:mouseover="showProjectPic()" on:mouseleave="hideProjectPic()" on:click="showProject(scope.event)">
+    <a href="#" class="{{^if showText}}hide-text{{/if}}" on:mouseover="showProjectPic()" on:mouseleave="hideProjectPic()" on:click="showProject(scope.event)">
       <h2>
         {{title}}
       </h2>
@@ -11,7 +11,7 @@
     </a>
   {{else}}
     <div class="project-details">
-      <button class="close-button" on:click="closeProject()">X</button>
+      <button class="close-button" on:click="closeProject()" />
       <div class="details-col-1">
         <img src="{{pic}}" class="pic-container shown" />
       </div>
