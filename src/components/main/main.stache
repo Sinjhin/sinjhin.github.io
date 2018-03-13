@@ -1,5 +1,5 @@
 
 <div class="vertical-center">
   <h1>{{moto}}</h1>
-  <p>Hi, I am John and I specialize in creating quality on the web</p>
+  <p>{{message}}</p>
 </div>
