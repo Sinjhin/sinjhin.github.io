@@ -4,8 +4,17 @@ import './main.less';
 import view from './main.stache';
 
 export const ViewModel = DefineMap.extend({
-  message: {
-    default: 'This is the sin-main component'
+  moto: {
+    default: 'The art of development'
+  },
+  connectedCallback(el) {
+    const animationTimer = setTimeout(() => {
+      el.classList.add('shown');
+    }, 500);
+
+    return function() {
+      clearInterval(animationTimer);
+    };
   }
 });
 

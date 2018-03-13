@@ -6,6 +6,15 @@ import view from './background.stache';
 export const ViewModel = DefineMap.extend({
   message: {
     default: 'This is the sin-background component'
+  },
+  connectedCallback(el) {
+    const portfolioTimer = setTimeout(() => {
+      el.classList.add('shown');
+    });
+
+    return function() {
+      clearInterval(portfolioTimer);
+    };
   }
 });
 

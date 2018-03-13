@@ -13,6 +13,8 @@ import '~/components/top-nav/top-nav-test';
 
 import '~/components/portfolio/portfolio-test';
 
+import '~/components/project/project-test';
+
 F.attach(QUnit);
 
 QUnit.module('john-gardner-resume-site functional smoke test', {

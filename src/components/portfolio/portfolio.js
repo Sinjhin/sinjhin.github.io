@@ -8,12 +8,12 @@ export const ViewModel = DefineMap.extend({
     default: 'This is the sin-portfolio component'
   },
   connectedCallback(el) {
-    const portfolioTimer = setTimeout(() => {
+    const animationTimer = setTimeout(() => {
       el.classList.add('shown');
     });
 
     return function() {
-      clearInterval(portfolioTimer);
+      clearInterval(animationTimer);
     };
   }
 });

@@ -15,13 +15,14 @@
       <sin-top-nav />
     </header>
     <main>
-      <sin-background />
       {{#switch(page)}}
         {{#case('portfolio')}}
+          <sin-background />
           <sin-portfolio />
         {{/case}}
         {{#default}}
-          <sin-main />
+          <sin-background />
+          <sin-main class="content-container" />
         {{/default}}
       {{/switch}}
     </main>

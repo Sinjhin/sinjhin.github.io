@@ -11,6 +11,14 @@ body {
   margin: 0;
   padding: 0;
   background: @body-bg;
+
+  header {
+    min-height: 6.8rem;
+  }
+
+  .content-container {
+    padding: 0.6rem;
+  }
 }
 
 a {
@@ -34,4 +42,16 @@ a:visited {
   width: 100%;
   height: 100%;
   box-shadow: 0 0 30rem 3rem rgba(0, 0, 0, 1) inset;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 813px) {
+  body main {
+    padding: 13.6rem 0;
+  }
 }
