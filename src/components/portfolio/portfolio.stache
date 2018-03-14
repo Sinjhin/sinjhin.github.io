@@ -14,16 +14,19 @@
           The design and development of this site is my latest project. It is written using 
           DoneJS CLI and the CanJS framework which is a modern open source JavaScript MVVM 
           framework written and maintained by the open source team at Bitovi, which I was 
-          routinely a part of.
+          routinely a part of. Check out my <a href="https://github.com/Sinjhin" target="_blank">Github Profile</a> for more info.
         </p>
+        <img src="http://ghchart.rshah.org/sinjhin" alt="Sinjhin's Github chart" />
         <p>
           It uses modern observable patterns, package management, and a templating language (stache) 
-          in order to deliver a performant site and well-structured environment for development.
+          in order to deliver a performant site and a well-structured live-reloading environment for development.
         </p>
+        <img src="/src/img/projects/thisGithubPR.jpg" />
         <p>
           It is version controlled, eslinted, tested (w/ code-coverage), and has automatically generated 
           documentation and syle-guide pages.
         </p>
+        <img src="/src/img/projects/thisTravis.jpg" />
         <p>
           It is setup for continous integration with automated testing and deployment.
         </p>
@@ -44,23 +47,22 @@
         </p>
         <img src="/src/img/projects/shopkeepRegister.jpg" />
         <p>
-          Looking to reduce two code-bases into one for half the development effort, we were approached 
+          Looking to reduce two code-bases into one for half the development overhead, we were approached 
           by Shopkeep to rapidly create a proof-of-concept to explore the possibility of using a 
           hybrid solution such as Cordova/PhoneGap or React Native.
         </p>
         <p>
           Having previous experience with this I was put onto the project. Along with one other developer 
           and a designer we were able to rapidly develop an almost full-fledged port of their native mobile 
-          point-of-sale software that communicated with specific proprietary hardware protocols such as 
-          receipt printers and barcode scanners in a matter or weeks.
+          point-of-sale software that communicated with specific proprietary hardware protocols via a Java 
+          and iOS APIs such as receipt printers and barcode scanners in a matter or weeks.
         </p>
-        <img src="/src/img/projects/shopkeepPIN.png" />
+        <img src="/src/img/projects/shopkeepPIN.jpg" />
         <p>
           As was standard, test driven development, a full documentation / style-guide, and continous integration 
-          was included. Quality and quantity at the same time.
+          were included. Quality and quantity at the same time.
         </p>
         <img src="/src/img/projects/shopkeepReport.jpg" />
-        <br />
       </section>
   </sin-project>
 </span>
@@ -70,7 +72,37 @@
     title:from="'HAULHOUND'" 
     duty:from="'DEVELOPMENT / LEAD'" 
     pic:from="'/src/img/projects/haulhoundHeader.jpg'">
-      I did some stuff
+      <section>
+        <h2>Haulhound - A Smart Loadboard</h2>
+        <p>
+          Ever wonder how many miles are driven with an empty trailer by the trucking industry 
+          every year? 20 billion in North America, or 215 times the distance from the Earth to 
+          the Sun. Haulhound seeks to solve this and brought us in to create a software platform 
+          to do just that.
+        </p>
+        <img src="/src/img/projects/haulhoundTruckshow.jpg" />
+        <p>
+          With a team of three developers and two designers we created a performant, cross-platform, 
+          responsive app for web, Android, and iOS. As is best practice the app was developed using 
+          test-driven development. It had automated testing and continous deployment as well as 
+          code-coverage reports, generated documentation and style guide, and an abstracted event-based 
+          analytics package using segment.io for easily plugging into Google Analytics and CRM platforms 
+          to measure metrics for success.
+        </p>
+        <img src="/src/img/projects/haulhound.jpg" />
+        <p>
+          Cordova was used as a singular hybrid codebase. Feathers (continously deployed to Heroku) was used to develop a backend API 
+          that consumed data from a Mongo database. Here maps was used to calculate distances. There 
+          were timezone challenges, challenges with cross-platform compatibility, old devices, and the 
+          difficulties of release schedule across the Apple App Store, Google Play Store, and web.
+        </p>
+        <img src="/src/img/projects/haulhoundApp1.jpg" />
+        <p>
+          Over the course of two trade shows we also provided on-site tech support for the app, triaged issues, 
+          and performed usability studies to dial in the app to perfection.
+        </p>
+        <img src="/src/img/projects/haulhoundMe.jpg" />
+      </section>
   </sin-project>
 </span>
 <span class="col-4">
@@ -81,7 +113,37 @@
     pic:from="'/src/img/projects/engaugeHeader.jpg'"
     showText:from="'true'"
     focusTopLeft:from="'true'">
-      I did some stuff
+      <section>
+        <h2>ENGAUGE - WebRTC and Video Archiving for Surgeons</h2>
+        <p>
+          Building the ENGAUGE application was a treat as it dealt with lots of cool WebRTC video
+          technology. The challenge was to give surgeons a platform for live sharing of knowledge 
+          and techniques used in surgeries. It needed to be HIPAA compliant in the US as well 
+          as following the necessary similar legislation in other countries.
+        </p>
+        <p>
+          High quality video was a must. Multiple recording devices were supported for use of a webcam 
+          in addition to surgical scopes. Live annotations were capabale of pointing out details of the 
+          procedure.
+        </p>
+        <img src="/src/img/projects/engaugeConference.jpg" />
+        <p>
+          It used Twillio for two-factor auth as well as the ability to make a phone call within the 
+          app and connect that call to a live video session.
+        </p>
+        <img src="/src/img/projects/engaugeTwoFactor.jpg" />
+        <p>
+          A Feathers API was developed to comsume data from MongoDB, JWTs were used for authentication, 
+          granular security was in place to limit user abilities and access to live sessions and archived videos. 
+          All of this was driven by an admin interface.
+        </p>
+        <img src="/src/img/projects/engaugeVideoList1.jpg" />
+        <p>
+          When live sessions were finished an API hook was triggered to upload them to a secure Amazon S3 bucket 
+          and a database record was created to diplay it as a recorded video for later review with comments.
+        </p>
+        <img src="/src/img/projects/engaugeComments.jpg" />        
+      </section>
   </sin-project>
 </span>
 <span class="col-5">
