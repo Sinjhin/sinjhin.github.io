@@ -6,8 +6,28 @@
     title:from="'`THIS`'" 
     duty:from="'DEVELOPMENT / DESIGN'" 
     pic:from="'/src/img/projects/this.jpg'"
-    showText:from="'true'">
-      I did some stuff
+    showText:from="'true'"
+    focusTopLeft:from="'true'">
+      <section>
+        <h2>My Resume / Portfolio Site</h2>
+        <p>
+          The design and development of this site is my latest project. It is written using 
+          DoneJS CLI and the CanJS framework which is a modern open source JavaScript MVVM 
+          framework written and maintained by the open source team at Bitovi, which I was 
+          routinely a part of.
+        </p>
+        <p>
+          It uses modern observable patterns, package management, and a templating language (stache) 
+          in order to deliver a performant site and well-structured environment for development.
+        </p>
+        <p>
+          It is version controlled, eslinted, tested (w/ code-coverage), and has automatically generated 
+          documentation and syle-guide pages.
+        </p>
+        <p>
+          It is setup for continous integration with automated testing and deployment.
+        </p>
+      </section>
   </sin-project>
 </span>
 <span class="col-2">
@@ -15,9 +35,33 @@
     toggleNav:from="@toggleNav" 
     title:from="'SHOPKEEP'" 
     duty:from="'DEVELOPMENT / PROTOTYPING'" 
-    pic:from="'/src/img/projects/shopkeep.jpg'"
-    type:from="'fill'">
-      I did some stuff
+    pic:from="'/src/img/projects/shopkeepHeader.jpg'">
+      <section>
+        <h2>Cordova Port of the Shopkeep Point of Sale Application</h2>
+        <p>
+          Rapid prototyping? Check. A singular codebase for both Android and iOS? Check. Integration 
+          with proprietary hardware via a Cordova plugin? Check. Three weeks to make an MVP? No prob!
+        </p>
+        <img src="/src/img/projects/shopkeepRegister.jpg" />
+        <p>
+          Looking to reduce two code-bases into one for half the development effort, we were approached 
+          by Shopkeep to rapidly create a proof-of-concept to explore the possibility of using a 
+          hybrid solution such as Cordova/PhoneGap or React Native.
+        </p>
+        <p>
+          Having previous experience with this I was put onto the project. Along with one other developer 
+          and a designer we were able to rapidly develop an almost full-fledged port of their native mobile 
+          point-of-sale software that communicated with specific proprietary hardware protocols such as 
+          receipt printers and barcode scanners in a matter or weeks.
+        </p>
+        <img src="/src/img/projects/shopkeepPIN.png" />
+        <p>
+          As was standard, test driven development, a full documentation / style-guide, and continous integration 
+          was included. Quality and quantity at the same time.
+        </p>
+        <img src="/src/img/projects/shopkeepReport.jpg" />
+        <br />
+      </section>
   </sin-project>
 </span>
 <span class="col-3">
@@ -25,8 +69,7 @@
     toggleNav:from="@toggleNav" 
     title:from="'HAULHOUND'" 
     duty:from="'DEVELOPMENT / LEAD'" 
-    pic:from="'/src/img/projects/haulhound.jpg'"
-    type:from="'fill'">
+    pic:from="'/src/img/projects/haulhoundHeader.jpg'">
       I did some stuff
   </sin-project>
 </span>
@@ -35,8 +78,9 @@
     toggleNav:from="@toggleNav" 
     title:from="'ENGAUGE'" 
     duty:from="'DEVELOPMENT / LEAD'" 
-    pic:from="'/src/img/projects/engauge.jpg'"
-    type:from="'fill'">
+    pic:from="'/src/img/projects/engaugeHeader.jpg'"
+    showText:from="'true'"
+    focusTopLeft:from="'true'">
       I did some stuff
   </sin-project>
 </span>
@@ -45,7 +89,9 @@
     toggleNav:from="@toggleNav" 
     title:from="'OTHER'" 
     duty:from="'DEVELOPMENT / DESIGN / LEAD'" 
-    pic:from="'/src/img/telekinetic-laptop.jpg'">
+    pic:from="'/src/img/telekinetic-laptop.jpg'"
+    showText:from="'true'"
+    focusTopLeft:from="'true'">
       I did some stuff
   </sin-project>
 </span>

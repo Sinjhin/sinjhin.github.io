@@ -5,17 +5,18 @@ sin-project {
 	position: relative;
 	height: 100%;
 	color: @white;
-
 	img.pic-container {
 		display: block;
 		opacity: 0;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
-		object-position: 0 0;
 		transition: all @norm ease-in-out;
 		&.shown {
 			opacity: 1;
+		}
+		&.focus-top-left {
+			object-position: 0 0;
 		}
 	}
 	
@@ -41,6 +42,10 @@ sin-project {
 		color: @transparent;
 	}
 
+	a.contrast-text:hover {
+		color: @black;
+	}
+
 	.project-details {
 		display: grid;
 		grid-template-columns: 20% 80%;
@@ -64,7 +69,11 @@ sin-project {
 		height: 100%;
 		overflow: auto;
 		background: @grey-dark;
-		padding: 1rem 6rem;
+		padding: 1rem 8rem 1rem 2rem;
+	}
+
+	section {
+		padding-bottom: 2rem;
 	}
 
 	button.close-button {
