@@ -5,10 +5,11 @@ import view from './main.stache';
 
 export const ViewModel = DefineMap.extend({
   moto: {
-    default: 'The art of development'
+    // default: 'The art of development'
+    default: 'Passion for development in every keystroke'
   },
   message: {
-    default: "Hi, I'm John and I specialize in creating quality on the web. Full. Stop.",  // eslint-disable-line
+    default: "Hi, I'm John and I specialize in creating quality on the web",  // eslint-disable-line
   },
   connectedCallback(el) {
     const animationTimer = setTimeout(() => {

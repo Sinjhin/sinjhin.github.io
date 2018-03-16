@@ -1,9 +1,9 @@
 
-<img src="{{pic}}" class="pic-container {{#if picShown}}shown{{/if}}" {{#if type}}style="object-fit: {{type}}"{{/if}}/>
+<img src="{{pic}}" class="pic-container {{#if picShown}}shown{{/if}} {{#if focusTopLeft}}focus-top-left{{/if}}" style="{{#if type}}object-fit: {{type}};{{/if}}"/>
 
 <div class="vertical-center center-text {{#if detailsShown}}details{{/if}}">
   {{^if detailsShown}}
-    <a href="#" class="{{^if showText}}hide-text{{/if}}" on:mouseover="showProjectPic()" on:mouseleave="hideProjectPic()" on:click="showProject(scope.event)">
+    <a href="#" class="{{^if showText}}hide-text{{/if}} {{#if contrastText}}contrast-text{{/if}}" on:mouseover="showProjectPic()" on:mouseleave="hideProjectPic()" on:click="showProject(scope.event)">
       <h2>
         {{title}}
       </h2>
