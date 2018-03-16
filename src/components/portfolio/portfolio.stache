@@ -151,9 +151,49 @@
     toggleNav:from="@toggleNav" 
     title:from="'OTHER'" 
     duty:from="'DEVELOPMENT / DESIGN / LEAD'" 
-    pic:from="'/src/img/telekinetic-laptop.jpg'"
+    pic:from="'/src/img/projects/otherHeader.jpg'"
     showText:from="'true'"
-    focusTopLeft:from="'true'">
-      I did some stuff
+    type:from="'fill'">
+      <section>
+        <img src="/src/img/projects/sbt01.jpg" class="float-left" />
+        <h2>Silver Bullet Throwdown</h2>
+        <p>
+          This app was a promotional game Strixian did for MillerCoors 
+          for the 2012 Football Season. We did the Android side while another company did 
+          the iOS version. We used the Cocos2d game engine for rendering the game screen. 
+          It involved swiping up on the football to throw it to a player with variable 
+          direction and velocity.
+        </p>
+        <br class="clear-both" />
+        <img src="/src/img/projects/prk01.jpg" class="float-left" />
+        <h2>Parkland.edu Website</h2>
+        <p>
+          I was in charge of day-to-day operations and content changes of the current 
+          <a href="parkland.edu" target="_blank">Parkland College Public Website</a>. 
+          The site was running on an old unsupported CMS called Active Admissions. I lead 
+          the college to purchase a modern enterprise (DNN Evoq) and began a website 
+          rebranding to bring it up to modern standards.
+        </p>
+        <br class="clear-both" />
+        <img src="/src/img/projects/tchsrv02.jpg" class="float-left" />
+        <h2>Tech Services Sharepoint Site</h2>
+        <p>
+          This was development of a site that was shoe-horned into a Sharepoint 2010 Install 
+          to act as a service catalog for Parkland Campus Technology services. A one stop shop 
+          for all tech-related links and statuses. Feedback was been tremendously positive.
+        </p>
+        <br class="clear-both" />
+        <img src="/src/img/projects/math02.jpg" class="float-left" />
+        <h2>ICTM Math Contest</h2>
+        <p>
+          My first project at Parkland as a Developer. This is an MVVC C# .NET Web App that 
+          manages a 500+ student math competition. It allows an administrator (Math faculty 
+          competition organizer) to create Admin and User accounts. User accounts allow for 
+          highschool coaches to log in, register, and manage their students and teams for 
+          the competition. After registration is closed an Admin can automatically schedule 
+          and sort all students to rooms and make any manual changes afterwards. It also 
+          dynamically generates 200+ page Word documents and Excel mail-merge spreadsheets.
+        </p>
+      </section>
   </sin-project>
 </span>
