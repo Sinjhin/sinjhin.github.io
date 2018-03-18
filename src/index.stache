@@ -9,16 +9,23 @@
     <can-import from="~/components/background/" />
     <can-import from="~/components/main/" />
     <can-import from="~/components/portfolio/" />
+    <can-import from="~/components/about-me/" />
     <can-import from="~/components/footer/" />
 
     <header>
-      <sin-top-nav toggleNav:from="toggleNav" {{#if navShown}}class="shown"{{/if}} />
+      <sin-top-nav 
+        toggleNav:from="toggleNav" 
+        toggleContact:from="toggleContact" 
+        {{#if navShown}}class="shown"{{/if}} />
     </header>
     <main>
       {{#switch(page)}}
         {{#case('portfolio')}}
           <sin-background />
           <sin-portfolio toggleNav:from="@toggleNav" />
+        {{/case}}
+        {{#case('about-me')}}
+          <sin-about-me />
         {{/case}}
         {{#default}}
           <sin-background />
