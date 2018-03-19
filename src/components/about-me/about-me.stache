@@ -1,4 +1,114 @@
 
-<img src="/src/img/telekinetic-laptop.jpg" />
+<img class="description-image" src={{aboutMeDescriptionImage}} />
 
-
+<section class="about-me-section">
+  <nav class="left-col">
+    <ul>
+      <li class="first-li" on:click="setDescription('')">+John</li>
+      <li on:click="setDescription('travel')">Travel</li>
+      <li on:click="setDescription('motorcycles')">Motorcycles</li>
+      <li on:click="setDescription('gaming')">Gaming</li>
+      <li on:click="setDescription('reading')">Reading</li>
+      <li on:click="setDescription('airsoft')">Airsoft</li>
+      <li on:click="setDescription('dog')">Coolest Dog</li>
+    </ul>
+  </nav>
+  <div class="right-col about-me-description">
+    {{#switch description}}
+      {{#case 'travel'}}
+        <p>
+          One of my main goals in life is to see as much of the world and its 
+          cultures as possible.
+        </p>
+        <p>
+          After exploring exploring temples in Japan, climbing mountains in China, 
+          playing gladiator in Italy, riding a motorcycle through Spain, walking 
+          through ancient alleys in Morroco, and eating ALL the best food along the 
+          way I am eagerly awaiting my next unknown journey.
+        </p>
+        <p>
+          I have very much enjoyed the oppourtunity as a developer to work 
+          remotely, which I find increases my productivity, and allows me 
+          movement through this awesome world we live on.
+        </p>
+      {{/case}}
+      {{#case 'motorcycles'}}
+        <p>
+          There is nothing quite like the freedom of the open road on two-wheels. 
+          The zen feeling of taking off with nothing but a backpack and some camping 
+          gear strapped on back, or the challenge of pushing your limits on some 
+          curvy roads exhilarates me.
+        </p>
+        <p>
+          A recent favorite ride was with a co-worker during a company retreat in 
+          Denver, CO. We rented bikes (my first time on a Harley), and rode up to 
+          10,000+ feet into the beautiful Rockies.
+        </p>
+        <p>
+          After ten years of riding one of my favorite weekend activities is still 
+          taking off on the motorcycle following nothing but my nose.
+        </p>
+      {{/case}}
+      {{#case 'gaming'}}
+        <p>
+          Back in the days of Ultima Online my father found me with our family computer 
+          torn apart as I was updating the video card with one that I had purchased 
+          from Circuit City.
+        </p>
+        <p>
+          Narrowly avoiding being grounded by showing the increase in performance when 
+          everything was put back together. This drive for better performance for gaming 
+          led into my interest in computers and what they could do.
+        </p>
+        <p>
+          In a few years time I would be running LAN parties in my basement and at the 
+          local community college. Organizing a 30+ person gaming clan, and working 
+          both as an IT consultant in my small hometown as well as for the aformentioned 
+          community college as IT support.
+        </p>
+        <p>
+          Those were the days!
+        </p>
+      {{/case}}
+      {{#case 'reading'}}
+        <p>
+          I am an avid reader and appreciate a comfy night with a book (or Kindle these days). 
+        </p>
+        <p>
+          On the non-technical side I am a fan of sci-fi and fantasy. Robert Jordan, Heinlein, 
+          Neal Stephenson, Brandon Sanderson, Daniel Quinn, C. S. Lewis are all great.
+        </p>
+        <p>
+          The non-fiction side is usually filled with books on computer science and programming 
+          language, but occasionally a good philosophy, survival, physics, or biology book finds 
+          its way into the mix.
+        </p>
+      {{/case}}
+      {{#case 'airsoft'}}
+        <p>
+          The challenge and adrenaline you get when playing airsoft is addictive for me. It is 
+          a safe and fun way to put yourself in the scenario of "The Most Dangerous Game".
+        </p>
+      {{/case}}
+      {{#case 'dog'}}
+        Dog tax...
+      {{/case}}
+      {{#default}}
+        <p>
+          Developer/consultant, traveler, philosopher, gamer, biker, student of 
+          life and wannabe street musician / superhero.
+        </p>
+        <p>
+          I have been a computer nerd since I was twelve years old and 
+          working proffesionally with computer technology since the age of fifteen.
+        </p>
+        <p>
+          It has only gone uphill as my passion for development has grown and 
+          I have evolved into a full-stack developer and consultant, ensuring 
+          project success for both large well-known companies and awesome startups 
+          alike.
+        </p>
+      {{/default}}
+    {{/switch}}
+  </div>
+</section>
