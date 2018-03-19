@@ -15,6 +15,8 @@ import '~/components/portfolio/portfolio-test';
 
 import '~/components/project/project-test';
 
+import '~/components/about-me/about-me-test';
+
 F.attach(QUnit);
 
 QUnit.module('john-gardner-resume-site functional smoke test', {

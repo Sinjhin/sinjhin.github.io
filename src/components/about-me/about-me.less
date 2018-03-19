@@ -1,0 +1,50 @@
+@import '../../styles/variables.less';
+
+sin-about-me {
+	display: block;
+	color: @white;
+	text-align: center;
+	padding: 4rem 2rem 1rem 2rem;
+
+	img {
+		width: 70%;
+		object-fit: cover;
+		object-position: 0 0;
+		border-radius: 0.5rem;
+	}
+
+	section.about-me-section {
+		width: 70%;
+		margin: 0 auto;
+		text-align: left;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		padding-top: 2rem;
+		.left-col {
+			grid-column-start: 1;
+			grid-column-end: 2;
+		}
+		.right-col {
+			grid-column-start: 2;
+			grid-column-end: 3;
+			padding-top: 2rem;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			li {
+				padding-top: 2rem;
+				font-weight: bold;
+				cursor: pointer;
+				&.first-li {
+					margin-left: -2rem;
+				}
+			}
+		}
+
+		.about-me-description {
+			padding-right: 4rem;
+		}
+	}
+}

@@ -25,8 +25,16 @@ const AppViewModel = DefineMap.extend({
     default: false,
     serialize: false
   },
+  contactShown: {
+    type: 'boolean',
+    default: false,
+    serialize: false
+  },
   toggleNav() {
     this.navShown = !this.navShown;
+  },
+  toggleContact() {
+    this.contactShown = !this.contactShown;
   }
 });
 

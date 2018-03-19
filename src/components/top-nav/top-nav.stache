@@ -5,7 +5,7 @@
   <div class="column-right">
     <a {{^routeCurrent(page='portfolio')}}href="{{routeUrl(page='portfolio')}}"{{else}}class="current-page"{{/routeCurrent}}>Projects</a>
     <a href="/src/docs/Resume-Online.pdf">Resume</a>
-    <a href="#">About&nbsp;Me</a>
+    <a {{^routeCurrent(page='about-me')}}href="{{routeUrl(page='about-me')}}"{{else}}class="current-page"{{/routeCurrent}}>About&nbsp;Me</a>
     <a href="#">Contact</a>
   </div>
 </nav>
