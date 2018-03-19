@@ -1,0 +1,90 @@
+@import '../../styles/variables.less';
+
+sin-contact-me {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	z-index: @z-index-top;
+	color: @white;
+	div.slide-box {
+		background: @grey-darkest;
+		height: 100%;
+		transform: translate3d(100%, 0, 0);
+		transition: all @norm ease;
+		padding: 1.2rem 0;
+		&.shown {
+			transform: translate3d(0, 0, 0);
+		}
+		h1 {
+			margin: 0 1rem;
+		}
+		form {
+			padding: 3rem 1rem;
+			input, textarea {
+				box-sizing: border-box;
+				display: block;
+				width: 100%;
+				font-size: 2rem;
+				border: none;
+				padding: 2rem;
+				background: @grey-dark;
+				color: @white;
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					color: @grey-base;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					color: @grey-base;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					color: @grey-base;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					color: @grey-base;
+				}
+			}
+			textarea {
+				resize: none;
+				min-width: 40rem;
+				min-height: 20rem;
+			}
+			button {
+				border: none;
+				background: @grey-base;
+				color: @white;
+				font-size: 2rem;
+				padding: 1rem;
+				cursor: pointer;
+			}
+		}
+		button.close-button {
+			position: fixed;
+			top: 1rem;
+			right: 1rem;
+			background: none;
+			border: none;
+			cursor: pointer;
+			width: 4rem;
+			height: 4rem;
+			overflow: hidden;
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background: @white;
+				height: 1.2rem;
+				margin-top: -0.6rem;
+				width: 200%;
+				left: -50%;
+			}
+			&::before {
+				transform: rotate(45deg);
+			}
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

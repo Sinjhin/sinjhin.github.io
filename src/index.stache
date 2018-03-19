@@ -10,6 +10,7 @@
     <can-import from="~/components/main/" />
     <can-import from="~/components/portfolio/" />
     <can-import from="~/components/about-me/" />
+    <can-import from="~/components/contact-me/" />
     <can-import from="~/components/footer/" />
 
     <header>
@@ -32,6 +33,12 @@
           <sin-main class="content-container" />
         {{/default}}
       {{/switch}}
+
+      {{#if contactShown}}
+        <sin-contact-me 
+          toggleContact:from="toggleContact" 
+          toggleNav:from="toggleNav" />
+      {{/if}}
     </main>
     <footer>
       
