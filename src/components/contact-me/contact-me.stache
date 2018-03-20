@@ -1,0 +1,18 @@
+
+<div class="slide-box {{#if shown}}shown{{/if}}">
+  <button class="close-button" on:click="slideOut()" />
+
+  <h1>Let's Talk!</h1>
+
+  <form action="https://formspree.io/john@ardea.io" method="POST">
+    <input type="text" id="name" aria-label="name" placeholder="Name" name="name" />
+    <br />
+    <input type="text" id="email" aria-label="email" placeholder="Email" name="email" />
+    <br />
+    <textarea id="name" aria-label="message" placeholder="Your message..." name="message" />
+    <br />
+    <input type="hidden" name="_next" value="" />
+    <input type="hidden" name="_subject" value="New ardea.io message" />
+    <button type="submit" value="Send">Send Message</button>
+  </form>
+</div>
