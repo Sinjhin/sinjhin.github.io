@@ -73,13 +73,11 @@ export const ViewModel = DefineMap.extend({
     var size = 1024;
     var canvas = document.createElement('canvas');
     canvas.style.position = 'absolute';
-    canvas.style.top = '-50%';
-    canvas.style.left = '-50%';
-    canvas.style.height = '200vh';
-    canvas.style.width = '200vw';
-    // canvas.width = canvas.height = size;
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.height = '100vh';
+    canvas.style.width = '100vw';
     var ctx = canvas.getContext('2d');
-    //document.body.appendChild( canvas );
     el.appendChild(canvas);
 
     var vertices;
@@ -135,7 +133,6 @@ export const ViewModel = DefineMap.extend({
         }
         requestAnimationFrame( update );
     }
-
 
     function yolo( vertices, size, _w, _h ){
 

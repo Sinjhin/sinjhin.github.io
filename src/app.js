@@ -22,7 +22,13 @@ const AppViewModel = DefineMap.extend({
   },
   page: {
     type: 'string',
-    serialize: true
+    serialize: true,
+    set(val) {
+      if (this.page === 'portfolio' && val !== 'portfolio') {
+        this.navShown = true;
+      }
+      return val;
+    }
   },
   navShown: {
     type: 'boolean',

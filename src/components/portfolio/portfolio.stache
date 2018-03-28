@@ -152,7 +152,6 @@
     title:from="'OTHER'" 
     duty:from="'DEVELOPMENT / DESIGN / LEAD'" 
     pic:from="'/src/img/projects/otherHeader.jpg'"
-    showText:from="'true'"
     type:from="'fill'">
       <section>
         <img src="/src/img/projects/sbt01.jpg" class="float-left" />
