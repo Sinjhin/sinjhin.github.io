@@ -26,10 +26,6 @@ export const ViewModel = DefineMap.extend({
         this.description = 'gaming';
         this.aboutMeDescriptionImage = '/src/img/about-me/gaming-setup.jpg';
         break;
-      case 'airsoft':
-        this.description = 'airsoft';
-        this.aboutMeDescriptionImage = '/src/img/about-me/airsoft-group.jpg';
-        break;
       case 'reading':
         this.description = 'reading';
         this.aboutMeDescriptionImage = '/src/img/about-me/reading.jpg';

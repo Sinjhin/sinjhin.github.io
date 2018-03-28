@@ -84,12 +84,6 @@
           its way into the mix.
         </p>
       {{/case}}
-      {{#case 'airsoft'}}
-        <p>
-          The challenge and adrenaline you get when playing airsoft is addictive for me. It is 
-          a safe and fun way to put yourself in the scenario of "The Most Dangerous Game".
-        </p>
-      {{/case}}
       {{#case 'dog'}}
         Dog tax...
       {{/case}}
