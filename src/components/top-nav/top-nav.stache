@@ -1,5 +1,5 @@
 
-<nav>
+<nav {{#routeCurrent(page='about-me')}}class="background"{{/routeCurrent}}>
   <a href="{{routeUrl(page='home')}}" class="column-left">JOHN&nbsp;GARDNER</a>
 
   <div class="column-right">

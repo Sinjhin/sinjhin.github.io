@@ -12,6 +12,7 @@ sin-project {
 		width: 100%;
 		object-fit: cover;
 		transition: all @norm ease-in-out;
+		margin: 0;
 		&.shown {
 			opacity: 1;
 		}
@@ -50,6 +51,10 @@ sin-project {
 		margin: 0;
 	}
 
+	span {
+		padding: 0 1rem;
+	}
+
 	a.hide-text:hover {
 		color: @transparent;
 	}
@@ -80,7 +85,7 @@ sin-project {
 		grid-row-start: 1;
 		height: 100%;
 		overflow: auto;
-		background: @grey-dark;
+		background: @black;
 		padding: 1rem 8rem 1rem 2rem;
 	}
 
@@ -115,5 +120,11 @@ sin-project {
 		&::after {
 			transform: rotate(-45deg);
 		}
+	}
+}
+
+@media (max-width: 813px) {
+	sin-project.details-col-2 {
+		width: 100vw;
 	}
 }
