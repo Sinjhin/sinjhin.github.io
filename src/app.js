@@ -7,6 +7,10 @@ import 'can-debug#?./is-dev';
 const AppViewModel = DefineMap.extend({
   init(){
     window.appVM = this;
+    console.log('%cThanks for checking out the source!', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
+    console.log('%cThis project is built for maximum performance.', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
+    console.log('%cIf you want to see un-bundled, un-minified code it is OS here:', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
+    console.log('%chttps://github.com/sinjhin/sinjhin.github.io', 'font-size: large'); // eslint-disable-line no-console
   },
   env: {
     default: () => ({NODE_ENV:'development'}),
