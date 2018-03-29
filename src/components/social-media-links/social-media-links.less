@@ -1,0 +1,22 @@
+@import '../../styles/variables.less';
+
+sin-social-media-links {
+	display: block;
+	font-size: 4rem;
+	padding: 2rem;
+	color: @white;
+	z-index: @z-index-nav;
+	opacity: 0;
+	transform: translate3d(0, 10rem, 0);
+	transition: all @slow ease;
+	&.shown {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	a {
+		margin: 0 1rem;
+	}
+	a:hover {
+		color: @brand-success;
+	}
+}

@@ -12,6 +12,7 @@
     <can-import from="~/components/about-me/" />
     <can-import from="~/components/contact-me/" />
     <can-import from="~/components/footer/" />
+    <can-import from="~/components/social-media-links/" />
 
     <header>
       <sin-top-nav 
@@ -23,7 +24,9 @@
       {{#switch(page)}}
         {{#case('portfolio')}}
           <sin-background />
-          <sin-portfolio toggleNav:from="@toggleNav" />
+          <sin-portfolio 
+            toggleNav:from="@toggleNav" 
+            toggleFooter:from="toggleFooter" />
         {{/case}}
         {{#case('about-me')}}
           <sin-about-me />
@@ -40,8 +43,10 @@
           toggleNav:from="toggleNav" />
       {{/if}}
     </main>
-    <footer>
-      
+    <footer {{#routeCurrent(page='about-me')}}class="background"{{/routeCurrent}}>
+      <sin-social-media-links 
+        toggleFooter:from="toggleFooter" 
+        {{#if footerShown}}class="shown"{{/if}} />
     </footer>
 
     {{#switch env.NODE_ENV}}

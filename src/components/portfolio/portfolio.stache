@@ -3,6 +3,7 @@
 <span class="col-1">
   <sin-project 
     toggleNav:from="@toggleNav" 
+    toggleFooter:from="toggleFooter" 
     title:from="'`THIS`'" 
     duty:from="'DEVELOPMENT / DESIGN'" 
     pic:from="'/src/img/projects/this.jpg'"
@@ -36,6 +37,7 @@
 <span class="col-2">
   <sin-project 
     toggleNav:from="@toggleNav" 
+    toggleFooter:from="toggleFooter" 
     title:from="'SHOPKEEP'" 
     duty:from="'DEVELOPMENT / PROTOTYPING'" 
     pic:from="'/src/img/projects/shopkeepHeader.jpg'">
@@ -69,6 +71,7 @@
 <span class="col-3">
   <sin-project 
     toggleNav:from="@toggleNav" 
+    toggleFooter:from="toggleFooter" 
     title:from="'HAULHOUND'" 
     duty:from="'DEVELOPMENT / LEAD'" 
     pic:from="'/src/img/projects/haulhoundHeader.jpg'">
@@ -108,6 +111,7 @@
 <span class="col-4">
   <sin-project 
     toggleNav:from="@toggleNav" 
+    toggleFooter:from="toggleFooter" 
     title:from="'ENGAUGE'" 
     duty:from="'DEVELOPMENT / LEAD'" 
     pic:from="'/src/img/projects/engaugeHeader.jpg'"
@@ -149,6 +153,7 @@
 <span class="col-5">
   <sin-project 
     toggleNav:from="@toggleNav" 
+    toggleFooter:from="toggleFooter" 
     title:from="'OTHER'" 
     duty:from="'DEVELOPMENT / DESIGN / LEAD'" 
     pic:from="'/src/img/projects/otherHeader.jpg'"

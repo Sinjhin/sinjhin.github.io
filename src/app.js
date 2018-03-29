@@ -9,7 +9,7 @@ const AppViewModel = DefineMap.extend({
     window.appVM = this;
     console.log('%cThanks for checking out the source!', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
     console.log('%cThis project is built for maximum performance.', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
-    console.log('%cIf you want to see un-bundled, un-minified code it is OS here:', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
+    console.log('%cIf you want to see un-bundled/un-minified code, OS repo here:', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
     console.log('%chttps://github.com/sinjhin/sinjhin.github.io', 'font-size: large'); // eslint-disable-line no-console
   },
   env: {
@@ -26,6 +26,7 @@ const AppViewModel = DefineMap.extend({
     set(val) {
       if (this.page === 'portfolio' && val !== 'portfolio') {
         this.navShown = true;
+        this.footerShown = true;
       }
       return val;
     }
@@ -40,11 +41,19 @@ const AppViewModel = DefineMap.extend({
     default: false,
     serialize: false
   },
+  footerShown: {
+    type: 'boolean',
+    default: false,
+    serialize: false
+  },
   toggleNav() {
     this.navShown = !this.navShown;
   },
   toggleContact() {
     this.contactShown = !this.contactShown;
+  },
+  toggleFooter() {
+    this.footerShown = !this.footerShown;
   }
 });
 

@@ -8,6 +8,7 @@ export const ViewModel = DefineMap.extend({
   duty: 'string',
   pic: 'string',
   toggleNav: 'any',
+  toggleFooter: 'any',
   picShown: {
     type: 'boolean',
     default: false
@@ -25,11 +26,13 @@ export const ViewModel = DefineMap.extend({
   showProject(event) {
     event.preventDefault();
     this.toggleNav();
+    this.toggleFooter();
     this.detailsShown = true;
     this.hideProjectPic();
   },
   closeProject() {
     this.toggleNav();
+    this.toggleFooter();
     this.detailsShown = false;
   }
 });

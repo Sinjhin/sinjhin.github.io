@@ -8,6 +8,7 @@ export const ViewModel = DefineMap.extend({
     default: 'This is the sin-portfolio component'
   },
   toggleNav: 'any',
+  toggleFooter: 'any',
   connectedCallback(el) {
     const animationTimer = setTimeout(() => {
       el.classList.add('shown');
