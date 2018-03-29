@@ -7,6 +7,7 @@ sin-main {
 	top: 50%;
 	left: 50%;
 	width: 70%;
+	max-width: 135rem;
 	opacity: 0;
 	transform: translate3d(-60%, 20rem, 0);
 	transition: all @slow ease;
@@ -22,5 +23,14 @@ sin-main {
 		padding: 0 0 0 1rem;
 		font-style: italic;
 		font-size: 1.6vw;
+	}
+
+	@media (min-width: 1700px) {
+		h1 {
+			 font-size: 13.8rem;
+		}
+		p {
+			font-size: 2.76rem;
+		}
 	}
 }
