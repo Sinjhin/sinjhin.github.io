@@ -19,6 +19,8 @@ import '~/components/about-me/about-me-test';
 
 import '~/components/contact-me/contact-me-test';
 
+import '~/components/social-media-links/social-media-links-test';
+
 F.attach(QUnit);
 
 QUnit.module('john-gardner-resume-site functional smoke test', {
