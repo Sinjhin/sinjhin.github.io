@@ -5,9 +5,6 @@ import view from './background.stache';
 // import '../../utils/webgl-background';
 
 export const ViewModel = DefineMap.extend({
-  message: {
-    default: 'This is the sin-background component'
-  },
   connectedCallback(el) {
     const portfolioTimer = setTimeout(() => {
       el.classList.add('shown');

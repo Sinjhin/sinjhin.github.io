@@ -23,7 +23,7 @@
     <main>
       {{#switch(page)}}
         {{#case('portfolio')}}
-          <sin-background />
+          <sin-background class="transition-from-right" />
           <sin-portfolio 
             toggleNav:from="@toggleNav" 
             toggleFooter:from="toggleFooter" />
