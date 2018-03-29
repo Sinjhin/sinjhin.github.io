@@ -2,12 +2,12 @@ import Component from 'can-component';
 import DefineMap from 'can-define/map/';
 import './social-media-links.less';
 import view from './social-media-links.stache';
-import fontawesome from '@fortawesome/fontawesome';
+// import fontawesome from '@fortawesome/fontawesome';
 // import faSolid from '@fortawesome/fontawesome-free-solid';
-import faBrands from '@fortawesome/fontawesome-free-brands';
+// import faBrands from '@fortawesome/fontawesome-free-brands';
 
 // fontawesome.library.add(faSolid);
-fontawesome.library.add(faBrands);
+// fontawesome.library.add(faBrands);
 
 export const ViewModel = DefineMap.extend({
   toggleFooter: 'any',
