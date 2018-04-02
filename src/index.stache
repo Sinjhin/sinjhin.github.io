@@ -20,7 +20,7 @@
         toggleContact:from="toggleContact" 
         {{#if navShown}}class="shown"{{/if}} />
     </header>
-    <main>
+    <main {{#if navShown}}class="margin-top"{{/if}}>
       {{#switch(page)}}
         {{#case('portfolio')}}
           <sin-background class="transition-from-right" />
