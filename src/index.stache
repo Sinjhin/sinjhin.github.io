@@ -36,14 +36,15 @@
           <sin-main class="content-container" />
         {{/default}}
       {{/switch}}
-
-      {{#if contactShown}}
-        <sin-contact-me 
-          toggleContact:from="toggleContact" 
-          toggleNav:from="toggleNav" />
-      {{/if}}
     </main>
-    <footer {{#routeCurrent(page='about-me')}}class="background"{{/routeCurrent}}>
+
+    {{#if contactShown}}
+      <sin-contact-me 
+        toggleContact:from="toggleContact" 
+        toggleNav:from="toggleNav" />
+    {{/if}}
+    
+    <footer class="{{#routeCurrent(page='about-me')}}background{{/routeCurrent}} {{#if footerShown}}footer-shown{{/if}}">
       <sin-social-media-links 
         toggleFooter:from="toggleFooter" 
         {{#if footerShown}}class="shown"{{/if}} />

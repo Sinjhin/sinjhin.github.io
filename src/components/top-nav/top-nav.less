@@ -8,7 +8,7 @@ sin-top-nav {
 	z-index: @z-index-nav;
 	opacity: 0;
 	transform: translate3d(0, -20rem, 0);
-	transition: all @slow ease;
+	transition: transform @slow ease, opacity @slow ease;
 	&.shown {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
