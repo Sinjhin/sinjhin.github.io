@@ -73,6 +73,10 @@ a:visited {
     height: 100vh;
   }
   footer {
-    background: @black;
+    height: 0;
+    &.footer-shown {
+      height: auto;
+      background: @black;
+    }
   }
 }

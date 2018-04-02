@@ -11,7 +11,7 @@ sin-project {
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
-		transition: all @norm ease-in-out;
+		transition: opacity @norm ease-in-out;
 		margin: 0;
 		&.shown {
 			opacity: 1;
@@ -36,7 +36,6 @@ sin-project {
 	div.center-text {
 		width: 100%;
 		text-align: center;
-		transition: all @norm ease-in-out;
 		&.details {
 			position: fixed;
 			z-index: @z-index-top;
@@ -135,6 +134,9 @@ sin-project {
 			grid-column-start: 0;
 			grid-column-end: 1;
 			padding-top: 4rem;
+			section {
+				padding-bottom: 6rem;
+			}
 		}
 		img.pic-container {
 			&.focus-top-left {

@@ -9,8 +9,6 @@
       <li on:click="setDescription('motorcycles')">Motorcycles</li>
       <li on:click="setDescription('gaming')">Gaming</li>
       <li on:click="setDescription('reading')">Reading</li>
-      <li on:click="setDescription('airsoft')">Airsoft</li>
-      <li on:click="setDescription('dog')">Coolest Dog</li>
     </ul>
   </nav>
   <div class="right-col about-me-description">
@@ -58,7 +56,7 @@
         <p>
           Narrowly avoiding being grounded by showing the increase in performance when 
           everything was put back together. This drive for better performance for gaming 
-          led into my interest in computers and what they could do.
+          led to my interest in computers and what they could do.
         </p>
         <p>
           In a few years time I would be running LAN parties in my basement and at the 
@@ -80,21 +78,18 @@
         </p>
         <p>
           The non-fiction side is usually filled with books on computer science and programming 
-          language, but occasionally a good philosophy, survival, physics, or biology book finds 
+          languages but occasionally a good philosophy, survival, physics, or biology book finds 
           its way into the mix.
         </p>
-      {{/case}}
-      {{#case 'dog'}}
-        Dog tax...
       {{/case}}
       {{#default}}
         <p>
           Developer/consultant, traveler, philosopher, gamer, biker, student of 
-          life and wannabe street musician / superhero.
+          life and wannabe superhero.
         </p>
         <p>
           I have been a computer nerd since I was twelve years old and 
-          working proffesionally with computer technology since the age of fifteen.
+          working professionally with computer technology since the age of fifteen.
         </p>
         <p>
           It has only gone uphill as my passion for development has grown and 
@@ -105,4 +100,37 @@
       {{/default}}
     {{/switch}}
   </div>
+</section>
+
+<section class="about-me-mobile-section">
+  <p>
+    Developer/consultant, traveler, philosopher, gamer, biker, student of 
+    life and wannabe superhero.
+  </p>
+  <p>
+    I have been a computer nerd since I was twelve years old and 
+    working professionally with computer technology since the age of fifteen.
+  </p>
+  <p>
+    It has only gone uphill as my passion for development has grown and 
+    I have evolved into a full-stack developer and consultant, ensuring 
+    project success for both large well-known companies and awesome startups 
+    alike.
+  </p>
+  <br />
+  <p>
+    One of my main goals in life is to see as much of the world and its 
+    cultures as possible.
+  </p>
+  <p>
+    After exploring exploring temples in Japan, climbing mountains in China, 
+    playing gladiator in Italy, riding a motorcycle through Spain, walking 
+    through ancient alleys in Morroco, and eating ALL the best food along the 
+    way I am eagerly awaiting my next unknown journey.
+  </p>
+  <p>
+    I have very much enjoyed the oppourtunity as a developer to work 
+    remotely, which I find increases my productivity, and allows me 
+    movement through this awesome world we live on.
+  </p>
 </section>

@@ -4,6 +4,7 @@ sin-about-me {
 	display: block;
 	color: @white;
 	text-align: center;
+	margin-top: 6.8rem;
 	padding: 4rem 2rem 1rem 2rem;
 
 	img {
@@ -46,6 +47,21 @@ sin-about-me {
 
 		.about-me-description {
 			padding-right: 4rem;
+		}
+	}
+	section.about-me-mobile-section {
+		display: none;
+	}
+}
+
+@media (max-width: 813px) {
+	sin-about-me {
+		grid-template-columns: 100%;
+		section.about-me-section {
+			display: none;
+		}
+		section.about-me-mobile-section {
+			display: block;
 		}
 	}
 }
