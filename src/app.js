@@ -4,15 +4,19 @@ import 'can-route-pushstate';
 import 'can-stache-route-helpers';
 import 'can-debug#?./is-dev';
 import './utils/konami';
+import bowser from 'bowser';
 
 const AppViewModel = DefineMap.extend({
-  init(){
+  init() {
     window.appVM = this;
     console.log('%cThanks for checking out the source!', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
     console.log('%cThis project is built for maximum performance.', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
     console.log('%cIf you want to see un-bundled/un-minified code, OS repo is here:', 'background: black; color: yellowgreen; font-size: large'); // eslint-disable-line no-console
     console.log('%chttps://github.com/sinjhin/sinjhin.github.io', 'font-size: large'); // eslint-disable-line no-console
     console.log('%cAlso... the konami code certainly won`t work here...', 'background: black; color: yellowgreen; font-size: small'); // eslint-disable-line no-console
+    if (bowser.msie) {
+      alert('Sorry, IE is not supported. Please use Edge or another modern browser');
+    }
   },
   env: {
     default: () => ({NODE_ENV:'development'}),
