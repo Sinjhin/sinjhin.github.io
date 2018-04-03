@@ -69,6 +69,7 @@
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-brands": "^5.0.9",
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
+    "bowser": "^1.9.3",
     "can-component": "^4.0.2",
     "can-connect": "^2.0.2",
     "can-define": "^2.0.1",
