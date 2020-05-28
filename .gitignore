@@ -31,3 +31,7 @@ node_modules
 build/
 cache/
 # docs/
+
+# System Files
+.DS_Store
+Thumbs.db
